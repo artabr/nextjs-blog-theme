@@ -36,6 +36,19 @@ function MyApp({ Component, pageProps }) {
           __html: `function OptanonWrapper() {}`,
         }}
       />
+      <Script
+        id="hjScript"
+        dangerouslySetInnerHTML={{
+          __html: `(function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:3065148,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+      })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');`,
+        }}
+      />
       <span className="theme-bejamas" />
       <div className="bg-indigo-600 w-full">
         <div className="max-w-7xl mx-auto py-3 px-3 sm:px-6 lg:px-8">
